@@ -13,12 +13,12 @@
   -->
 
   <div class="buttons-container">
-    <button data-action="show">Показать список</button>
-    <button data-action="hide" class="active">Скрыть список</button>
+    <button data-action="show" data-toggle-id="listHide" >Показать список</button>
+    <button data-action="hide" class="active" data-toggle-id="listHide">Скрыть список</button>
   </div>
    
   <div class="list-container show">
-    <ul>
+    <ul id="listHide">
       Список дел:
       <li>Отвезти детей в сад</li>
       <li>Заправить машину</li>
