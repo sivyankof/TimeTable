@@ -41,7 +41,7 @@ div.hide {
   height: 35px;
 }
 
-li {
+li :checked{
   list-style-position: inside;
 }
 
