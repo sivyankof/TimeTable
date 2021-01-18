@@ -1,7 +1,7 @@
 let show_button = document.querySelector('button[data-action="show"]');
 let hide_button = document.querySelector('button[data-action="hide"]');
 let list_container = document.querySelector('.list-container');
-let checkboxes = document.querySelectorAll("ul input[type='checkbox']:checked");
+let checkboxes = document.querySelectorAll("ul input[type='checkbox']");
 
 document.addEventListener('click', function(event) {
   let action = event.target.dataset.action;
@@ -20,18 +20,17 @@ document.addEventListener('click', function(event) {
     show_button.classList.add('active');
     list_container.classList.add('hide');
   }
-  
-
- /* let numberOfCheckedItems = 0;  
-    for(var i = 0; i < checkboxes.length; i++)  
+  /*
+ let numberOfCheckedItems = 0;  
+    for(let i = 0; i < checkboxes.length; i++)  
     {  
         if(checkboxes[i].checked)  
             numberOfCheckedItems++;  
     }  
-    if(checkboxes.checked)  
-    { checkboxes.classList.add('hide') 
+    if(checkboxes.input.checked = false)  
+    { checkboxes.classList.add('checked') 
     } else {
-      checkboxes.classList.add('show')
+      checkboxes.classList.remove('checked')
   }*/
 
   if(event.target.classList.contains('active')) {

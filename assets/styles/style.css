@@ -41,7 +41,7 @@ div.hide {
   height: 35px;
 }
 
-li :checked{
-  list-style-position: inside;
+li.checked{
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
-
