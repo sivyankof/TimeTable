@@ -29,6 +29,8 @@ document.addEventListener('click', function(event) {
       checkboxes.classList.add('checked');
       }
  };*/
+  
+  
 
   if(event.target.classList.contains('active')) {
     this[action]();
